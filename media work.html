@@ -1,0 +1,1688 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.header{
+			width: 100%;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+		}
+		a{
+			text-decoration: none;
+		}
+		.prnt{
+			width: 70%;
+			height: 40px;
+			line-height: 40px;
+		}
+		.prnt a{
+			color: black;
+		}
+		.logo{
+			float: left;
+			margin-left: 10px;
+			font-family: poppins;
+			font-size: 12px;
+		}
+		.fb{
+			float: right;
+			margin-right: 10px;
+		}
+		.bar{
+			width: 100%;
+			height: 40px;
+			background-color: #646768;
+			display: flex;
+			justify-content: center;
+		}
+		.nav{
+			width: 70%;
+			height: 40px;
+			line-height: 40px;
+		}
+		.ch1{
+			float: left;
+			margin-left: 10px;
+			font-size: 15px;
+			
+		}
+		.navigation{
+			float: right;
+			margin-right: 10px;
+			margin-left: 50px;
+				
+				}
+		.navigation ul li{
+			font-size: 10px;
+			display: inline;
+		}
+		.navigation ul li a{
+			padding: 0px 5px;
+			color: white;
+			font-family: lato;
+		}
+		.navigation ul li a:hover{
+			text-decoration: underline;
+			color: #ff6600;
+		}
+		.ch1 a{
+			color: white;
+			font-family: lato;
+		} 
+		.fb a i:hover{
+			color: #ff6b10;
+		}
+		.baner{
+			width: 100%;
+			height: 400px;
+			background-image: url('img/2.jpg');
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.box{
+			width: 70%;
+			height: 400px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.ch2{
+			width: 63%;
+			height: 50px;
+			background-color: #564f4a;
+			line-height: 50px;
+			opacity: 57%; 
+		}
+		.ch2 h1{
+			font-family: poppins;
+			color: white;
+			margin-left: 15px;
+		}
+		.ch2 span{
+			color: #ff6600;
+		}
+		.ch3{
+			width: 60%;
+			height: 50px;
+			background-color: #ed8c48;
+			line-height: 50px;
+			opacity: 57%;
+		}
+		.ch3 h3{
+			font-family: poppins;
+			color: white;
+			margin-left: 15px;
+		}
+		#last{
+			background-color: #ff6b10;
+			padding: 5px 10px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		#last:hover{
+			background-color: white;
+			color: #ff6b10;
+			text-decoration: none;
+		}
+
+		.last a{
+			background-color: #ff6b10;
+			padding: 10px 20px;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			color: white;
+			font-family: lato;
+			font-size: 10px;
+		}
+		.ch4{
+			margin-top: 20px;
+		}
+		.last a:hover{
+			border: 1px solid #ff6b10;
+			background-color: white;
+			color: #ff6b10;
+			text-decoration: none;
+		}
+		
+		
+		.last1 a{
+			border: 1px solid #ff6b10;
+			background-color: white;
+			padding: 10px 20px;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			color: #ff6b10;
+			font-family: lato;
+			font-size: 10px;
+		}
+		.last1 a:hover{
+			background-color: #ff6b10;
+			color: #ff6b10;
+			text-decoration: none;
+			color: white;
+		}
+		.baner3{
+			width: 100%;
+			height: 250px;
+			background-color: #ffffff;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+		}
+		.ch10{
+			width: 70%;
+			height: 250px;	
+				}
+		.ch11{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+		}
+		.ch11 h2{
+			font-family: poppins;
+			color: #ff6b10; 
+		}
+		.ch12{
+			width: 100%;
+			height: 80%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.ch13{
+			width: 23%;
+			height: 90%;
+			background-image: url('img/KYA043-scaled.jpg');
+			background-size: cover;
+			margin: 7px;
+			opacity: 88%;
+		}
+		.ch14{
+			width: 100%;
+			height: 100%;
+			background-color: #ff6600;
+			opacity: 88%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-family: poppins;
+			color: white;
+		}
+		.ch14 h5{
+			padding-top: 15px;
+		}
+		.ch14 p{
+			font-size: 10px;
+		}
+		.ch14 i{
+			font-size: 35px;
+		}
+		.ch15{
+			width: 23%;
+			height: 90%;
+			background-image: url('img/3 (1).jpg');
+			background-size: cover;
+			margin: 7px;
+			opacity: 88%;
+		}
+		.ch16{
+			width: 100%;
+			height: 100%;
+			background-color: #ff6600;
+			opacity: 88%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-family: poppins;
+			color: white;
+		}
+		.ch16 h5{
+			padding-top: 15px;
+		}
+		.ch16 p{
+			font-size: 10px;
+		}
+		.ch16 i{
+			font-size: 35px;
+		}
+		.ch17{
+			width: 23%;
+			height: 90%;
+			background-image: url('img/girl-67694_1920copy.jpg');
+			background-size: cover;
+			margin: 7px;
+			opacity: 88%;
+		}
+		.ch18{
+			width: 100%;
+			height: 100%;
+			background-color: #ff6600;
+			opacity: 88%;
+			font-family: poppins;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		.ch18 h5{
+			padding-top: 15px;
+		}
+		.ch18 p{
+			font-size: 10px;
+		}
+		.ch18 i{
+			font-size: 35px;
+		}
+		.ch19{
+			width: 23%;
+			height: 90%;
+			background-image: url('img/1.jpg');
+			background-size: cover;
+			margin: 7px;
+			opacity: 88%;
+		}
+		.ch20{
+			width: 100%;
+			height: 100%;
+			background-color: #ff6600;
+			opacity: 88%;
+			font-family: poppins;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		.ch20 h5{
+			padding-top: 15px;
+		}
+		.ch20 p{
+			font-size: 10px;
+		}
+		.ch20 i{
+			font-size: 35px;
+		}
+		.ch20:hover{
+			background-color: white;
+		}
+		.ch20:hover p{
+			color: #ff6b10;
+		}
+		.ch20:hover h5{
+			color: #ff6b10;
+		}
+		.ch20:hover i{
+			color: #ff6b10;
+		}
+		.ch18:hover{
+			background-color: white;
+		}
+		.ch18:hover p{
+			color: #ff6b10;
+		}
+		.ch18:hover h5{
+			color: #ff6b10;
+		}
+		.ch18:hover i{
+			color: #ff6b10;
+		}
+		.ch16:hover{
+			background-color: white;
+		}
+		.ch16:hover p{
+			color: #ff6b10;
+		}
+		.ch16:hover h5{
+			color: #ff6b10;
+		}
+		.ch16:hover i{
+			color: #ff6b10;
+		}
+		.ch14:hover{
+			background-color: white;
+		}
+		.ch14:hover p{
+			color: #ff6b10;
+		}
+		.ch14:hover h5{
+			color: #ff6b10;
+		}
+		.ch14:hover i{
+			color: #ff6b10;
+		}
+		.baner4{
+			width: 100%;
+			height: 500px;
+			background-color: #f7f7f7;
+			display: flex;
+			justify-content: center;
+		}
+		.ch21{
+			width: 100%;
+			height: 30%;
+			font-family: poppins;
+			text-align: center;
+		}
+		.ch21 p{
+			font-size: 12px;
+			color: #2e2e2e;
+		}
+		.ch21 h2{
+			padding-top: 30px;
+			color: #ff6600;
+		}
+		.ch21 h4{
+			color: #2e2e2e;
+		}
+		.ch22{
+			width: 100%;
+			height: 70%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.baner5{
+			width: 100%;
+			height: 500px;
+			display: flex;
+			justify-content: center;
+		}
+		.ch23{
+			width: 80%;
+			height: 100%;
+		}
+		.ch30{
+			width: 80%;
+			height: 100%;
+		}
+		.ch31{
+			width: 100%;
+			height: 30%;
+			font-family: poppins;
+			text-align: center;
+		}
+		.ch31 p{
+			font-size: 12px;
+			color: #2e2e2e;
+		}
+		.ch31 h2{
+			padding-top: 30px;
+			color: #ff6600;
+		}
+		.ch31 h4{
+			color: #2e2e2e;
+		}
+		.ch32{
+			width: 100%;
+			height: 60%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.ch33{
+			width: 27%;
+			height: 100%;
+			margin:10px;
+			border: 2px solid #eeeded;
+		}
+		.ch34{
+			width: 100%;
+			height: 80%;
+		}
+		.ch35{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.ch35 h5{
+			font-family: poppins;
+			color: #2e2e2e;
+		}
+		.ch35 p{
+			font-family: poppins;
+			color: #ff6600;
+			font-size: 10px;
+		}
+
+		.ch36{
+			width: 27%;
+			height: 100%;
+			margin:10px;
+			border: 2px solid #eeeded;
+		}
+		.ch37{
+			width: 100%;
+			height: 80%;
+		}
+		.ch38{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.ch38 h5{
+			font-family: poppins;
+			color: #2e2e2e;
+		}
+		.ch38 p{
+			font-family: poppins;
+			color: #ff6600;
+			font-size: 10px;
+		}
+
+		.ch39{
+			width: 27%;
+			height: 100%;
+			margin:10px;
+			border: 2px solid #eeeded;
+		}
+		.ch40{
+			width: 100%;
+			height: 80%;
+		}
+		.ch41{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.ch41 h5{
+			font-family: poppins;
+			color: #2e2e2e;
+		}
+		.ch41 p{
+			font-family: poppins;
+			color: #ff6600;
+			font-size: 10px;
+		}
+		.baner6{
+			width: 100%;
+			height: 350px;
+			background-color: #f7f7f7;
+			display: flex;
+			justify-content: center;
+		}
+
+		.ch42{
+			width: 70%;
+			height: 100%;
+		}
+
+		.ch43{
+			width: 100%;
+			height: 30%;
+			font-family: poppins;
+			text-align: center;
+		}
+		.ch43 h2{
+			padding-top: 30px;
+			color: #ff6600;
+		}
+		.ch43 h4{
+			color: #2e2e2e;
+		}
+		.ch44{
+			width: 100%;
+			height: 60%;
+			display: flex;
+		}
+		.ch45{
+			width: 100%;
+			height: 10%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.ch46{
+			width: 50%;
+			height: 90%;
+			
+		}
+		.ch47{
+			width: 60%;
+			height: 40%;
+			margin-top: 65px;
+			margin-left: -20px;
+			border-radius: 10px;
+			padding: 10px;
+			background-image: url('img/ali.jpg');
+			background-size: 100% 100%;
+
+		}
+		.ch47 p{
+			font-size: 10px;
+		}
+		.ch47 i{
+			color: #ff6600;
+			font-size: 10px;
+		}
+		.ch48{
+			width: 100%;
+			height: 80%;
+			border-radius: 10px;
+			background-image: url('img/testimonial1.jpg');
+			background-size: cover;
+		}
+		.ch49{
+			width: 100%;
+			height: 20%;
+		}
+		.ch49 h5{
+			font-family: poppins;
+			color: #2e2e2e;
+			padding-top: 5px;
+		}
+		.ch49 p{
+			font-family: poppins;
+			color: #ff6600;
+			font-size: 10px;
+		}
+
+		.baner7{
+			width: 100%;
+			height: 300px;
+			background-color: #4a4a4a;
+			display: flex;
+			justify-content: center;
+		}
+		.ch50{
+			width: 30%;
+			height: 70%;
+			margin: 20px;
+		}
+		.ch50 a{
+			color: white;
+			font-family: lato;
+			display: inline-block;
+			margin-bottom: 10px;
+			padding-right: 10px;
+		}
+		.ch50 a:hover{
+			color: #ff6b10;
+			text-decoration: underline;
+		}
+		.logo a:hover{
+			color: #ff6b10;
+			text-decoration: underline;
+		}
+		.ch51{
+			width: 30%;
+			height: 70%;
+			margin: 20px;
+		}
+		.ch51 ul li{
+			list-style-type: none;
+		}
+		.ch51 ul li a{
+			color: white;
+			font-family: lato;
+			margin-bottom: 5px;
+			display: block;
+			font-size: 12px;
+		}
+		.ch51 ul li a:hover{
+			color: #ff6b10;
+			text-decoration: underline;
+		}
+		.ch52{
+			width: 30%;
+			height: 70%;
+			margin: 20px;
+			margin-left: -35px;
+		}
+		.ch52 button{
+			width: 97%;
+		    height: 40px;
+		    background-color: #ff6b10;
+		    color: white;
+		    border-radius: 5px;
+		    margin-top: 10px;
+		    border: none;
+		}
+		.ch52 .input1{
+			width: 88%;
+			height: 20px;
+			font-family: lato;
+			font-style: medium;
+			border-radius: 5px;
+			padding: 10px;
+			border: none;
+		}
+		.ch52 .input2{
+			width: 88%;
+			height: 20px;
+			font-family: lato;
+			font-style: medium;
+			border-radius: 5px;
+			padding: 10px;
+			margin-top: 10px;
+			border: none;
+		}
+		.ch52 .input3{
+			width: 88%;
+			height: 10px;
+			font-family: lato;
+			font-style: medium;
+			border-radius: 5px;
+			padding: 10px;
+			margin-top: 10px;
+			padding-bottom: 40px;
+			border: none;
+		}
+		.ch53{
+			width: 75%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.ch{
+			width: 100%;
+			height: 50px;
+			background-color: #4a4a4a;
+			border-top: 1px solid white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.ch24 img{
+			width: 100%;
+			height: 100%;
+		}
+		.ch24{
+			width: 27%;
+			height: 45%;
+			margin: 10px;
+			position: relative;
+		}
+		.box1{
+			width: 100%;
+			height: 100%;
+			top: 0;
+			background-color: #f17c2f;
+			color: #ffffff;
+			font-family: poppins;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 85%;
+		
+		}
+
+
+	    .ch28 img{
+			width: 100%;
+			height: 100%;
+		}
+		.ch28{
+			width: 27%;
+			height: 45%;
+			margin: 10px;
+			position: relative;
+			overflow: hidden;
+		}
+		.ch28:hover .box2{
+			top: 0;
+			transition: 0.7s;
+		}
+.box2{
+			width: 100%;
+			height: 100%;
+			top: -100%;
+			background-color: #f17c2f;
+			color: #ffffff;
+			font-family: poppins;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 85%;
+			
+		}
+		.navigation ul span{
+			display: none;
+		}
+
+	     .ch29 img{
+			width: 100%;
+			height: 100%;
+		}
+		.ch29{
+			width: 27%;
+			height: 45%;
+			margin: 10px;
+			position: relative;
+			overflow: hidden;
+		}
+		.ch29:hover .box3{
+			top: 0;
+			transition: 0.7s;
+		}
+.box3{
+			width: 100%;
+			height: 100%;
+			top: -100%;
+			background-color: #f17c2f;
+			color: #ffffff;
+			font-family: poppins;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 85%;
+			
+		}
+
+		.ch25{
+			width: 27%;
+			height: 45%;
+			background-size: cover;
+			margin: 10px;
+			margin-top: -3px;
+			position: relative;
+			overflow: hidden;
+		}
+		.ch25:hover .box4{
+			top: 0;
+			transition: 0.7s;
+		}
+.box4{
+			width: 100%;
+			height: 100%;
+			top: -100%;
+			background-color: #f17c2f;
+			color: #ffffff;
+			font-family: poppins;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 85%;
+			
+		}
+		.ch25 img{
+			width: 100%;
+			height: 100%;
+		}
+		.ch26{
+			width: 27%;
+			height: 45%;
+			background-size: cover;
+			margin: 10px;
+			margin-top: -3px;
+			position: relative;
+			overflow: hidden;
+		}
+		.ch26:hover .box5{
+			top: 0;
+			transition: 0.7s;
+		}
+.box5{
+			width: 100%;
+			height: 100%;
+			top: -100%;
+			background-color: #f17c2f;
+			color: #ffffff;
+			font-family: poppins;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 85%;
+			
+		}
+		.ch26 img{
+			width: 100%;
+			height: 100%;
+		}
+.box6{
+			width: 100%;
+			height: 100%;
+			top: -100%;
+			background-color: #f17c2f;
+			color: #ffffff;
+			font-family: poppins;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 85%;
+			
+		}
+
+		.ch27{
+			width: 27%;
+			height: 45%;
+			background-size: cover;
+			margin: 10px;
+			margin-top: -3px;
+			position: relative;
+			overflow: hidden;
+		}
+		.ch27:hover .box6{
+			top: 0;
+			transition: 0.7s;
+		}
+		.ch27 img{
+			width: 100%;
+			height: 100%;
+		}
+		.box6{
+			width: 100%;
+			height: 100%;
+			top: -100%;
+			background-color: #f17c2f;
+			color: #ffffff;
+			font-family: poppins;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 85%;
+			
+		}
+
+		.baner2{
+			width: 100%;
+			height: 450px;
+			background-color: #f7f7f7;
+			display: flex;
+			justify-content: center;
+		}
+		.ch5{
+			width: 70%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.ch6{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.ch6 h2{
+			font-family: poppins;
+			color: #ff6b10;
+		}
+		.ch7{
+			width: 100%;
+			height: 80%;
+		}
+	.ch8{
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+	.ch8 h3{
+		margin-top: 100px;
+	}
+	.ch8 h3,p{
+		font-family: poppins;
+		margin-left: 10px;
+	}
+	.ch8 p{
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
+	.ch9{
+		width: 40%;
+		height: 100%;
+		float: right;
+	} 
+@media screen and (max-width: 575px){
+	
+	.ch24,.ch25,.ch26,.ch27,.ch28,.ch29{
+			width: 100%;
+			height: 40%;
+			margin-top: 0px;
+			font-size: 25px;
+		}
+	.baner2{
+		height: 900px;
+	}
+	.ch5{
+		width: 100%;
+	}
+	.ch7{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.ch9{
+		width: 100%;
+		height: 80%;
+		text-align: center;
+	}
+	.ch9 img{
+		width: 100%;
+	}
+
+	.ch8{
+		height: 25%;
+		width: 100%;
+		margin-top: -40px;
+	}
+	.ch8 h3{
+		margin-top: 0px;
+	}
+	.prnt{
+		width: 100%;
+	}
+			.bar{
+				height: auto;
+			}
+			.nav{
+				width: 100%;
+				height: auto;
+				display: flex;
+			}
+			.navigation{
+				text-align: right;
+				width: 70%;
+
+			}
+			.navigation ul span{
+				display: block;
+			}
+		.navigation ul li{
+			font-size: 10px;
+			display: block;
+		}
+		.navigation ul li a{
+			padding: 0px 5px;
+			color: white;
+			font-family: lato;
+			font-size: 12px;
+		}
+		.box{
+			width: 80%;
+			height: 300px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 30px;
+		}
+				.baner{
+			width: 100%;
+			height: 300px;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			display: flex;
+			justify-content: center;
+		}
+		.ch2{
+			width: 97%;
+		}
+		.ch3{
+			width: 92%;
+		}
+		.baner3{
+			height: 1150px;
+		}
+		.ch10{
+			height: auto;
+			width: 100%;
+		}
+		.ch11{
+			height: 05%;
+			align-items: center;
+		}
+		.ch12{
+			height: auto;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.ch13,.ch15,.ch17,.ch19{
+			width: 100%;
+			height: 250px;
+		}
+		.ch14,.ch16,.ch18,.ch20{
+			width: 100%;
+			height: 250px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.ch14 h5,.ch16 h5,.ch18 h5,.ch20 h5{
+			padding-top: 0;
+			font-size: 20px;
+		}
+		.ch14 p,.ch16 p,.ch18 p,.ch20 p{
+			font-size: 15px;
+		}
+		.ch14 i,.ch16 i,.ch18 i,.ch20 i{
+			font-size: 45px;
+		}
+		.baner4{
+			height: auto;
+		}
+		.ch23{
+			width: 100%;
+		}
+		.ch21{
+			height: 150px;
+		}
+		.ch22{
+			height: auto;
+		}
+		.baner5{
+			height: auto;
+		}
+		.ch30{
+			width: 100%;
+		}
+		.ch32{
+			height: auto;
+			flex-direction: column;
+		}
+		.ch32 .ch33{
+			width: 100%;
+			height: 600px;
+		}
+		.ch32 .ch36{
+			width: 100%;
+			height: 600px;
+		}
+		.ch32 .ch39{
+			width: 100%;
+			height: 600px;
+		}
+		.baner6{
+			height: 400px;
+		}
+		.baner6 .ch42{
+			width: 100%;
+		}
+		.baner7{
+			height: auto;
+		}
+		.ch53{
+			height: auto;
+			width: 100%;
+			flex-direction: column;
+		}
+		.ch50{
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+			margin-left: 80%;
+		}
+		.ch52{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 10px;
+		}
+		.ch51{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		.ch52 .input1{
+			width: 80%;
+		}
+		.ch52 .input2{
+			width: 80%;
+		}
+		.ch52 .input3{
+			width: 80%;
+		}
+		.ch52 button{
+			width: 85%;
+		}
+		.ch1{
+			font-size: 15px;
+			width: 30%;
+		}
+		.ch48{
+			border-radius: 10px;
+			background-image: url('img/testimonial1.jpg');
+			background-size: 100% 100%;
+		}
+		}
+		@media screen and (max-width: 767px) and (min-width: 576px){
+			.prnt{
+				width: 90%;
+			}
+			.nav{
+				width: 90%;
+			}
+			.box{
+				width: 90%;
+			}
+			.ch5{
+				width: 90%;
+			}
+			.ch10{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.ch11{
+			height: 10%;
+		}
+		.ch12{
+			height: 90%;
+			justify-content: center;
+			align-items: center;
+		}
+		.baner3{
+			height: 500px;
+		}
+		.ch13,.ch15,.ch17,.ch19{
+			width: 43%;
+			margin: 10px;
+			height: 45%;
+		}
+		.ch23{
+			height: 100%;
+			width: 100%;
+		}
+		.ch24,.ch25,.ch26,.ch27,.ch28,.ch29{
+			height: 30%;
+			width: 43%;
+			margin-top: 0px;
+		}
+		.baner4{
+			height: 900px;
+		}
+		.ch21{
+			height: 15%;
+		}
+		.ch21 h2{
+			padding-top: 20px;
+		}
+		.ch22{
+			height: 85%;
+		}
+		.baner5{
+			height: 450px;
+		}
+        .ch30{
+				width: 100%;
+			}
+			.ch33,.ch36,.ch39{
+				margin: 7px;
+			}
+			.ch32{
+			height: 60%;
+		}
+		.ch31 h2{
+			padding-top: 15px;
+		}
+		.ch42{
+				width: 90%;
+			}
+			.ch53{
+				width: 100%;
+			}
+		}
+
+
+
+		@media screen and (max-width: 991px) and (min-width: 768px){
+			.prnt{
+				width: 90%;
+			}
+			.nav{
+				width: 90%;
+			}
+			.box{
+				width: 90%;
+			}
+			.ch5{
+				width: 90%;
+			}
+			.ch10{
+			width: 90%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.ch11{
+			height: 10%;
+		}
+		.ch12{
+			height: 90%;
+			justify-content: center;
+			align-items: center;
+		}
+		.baner3{
+			height: 500px;
+		}
+		.ch13,.ch15,.ch17,.ch19{
+			width: 43%;
+			margin: 10px;
+			height: 45%;
+		}
+		.ch23{
+			height: 100%;
+			width: 90%;
+		}
+		.ch24,.ch25,.ch26,.ch27,.ch28,.ch29{
+			height: 30%;
+			width: 43%;
+			margin-top: 0px;
+		}
+		.baner4{
+			height: 1000px;
+		}
+		.ch21{
+			height: 15%;
+		}
+		.ch21 h2{
+			padding-top: 20px;
+		}
+		.ch22{
+			height: 85%;
+		}
+		.baner5{
+			height: 450px;
+		}
+        .ch30{
+				width: 90%;
+			}
+			.ch33,.ch36,.ch39{
+				margin: 7px;
+			}
+			.ch32{
+			height: 60%;
+		}
+		.ch31 h2{
+			padding-top: 15px;
+		}
+		.ch42{
+				width: 80%;
+			}
+			.ch53{
+				width: 90%;
+			}
+			.fb i{
+				font-size: 18px;
+			}
+			.logo{
+			font-size: 17px;
+		}
+		.ch1{
+			font-size: 18px;
+		}
+		.navigation ul li a{
+			font-size: 12px;
+		}
+		.ch4 span a{
+			font-size: 12px;
+		}
+		.ch8 span a{
+			font-size: 12px;
+		}
+		} 
+
+		@media screen and (max-width: 1199px) and (min-width: 992px){
+						.prnt{
+				width: 80%;
+			}
+			.nav{
+				width: 80%;
+			}
+			.box{
+				width: 80%;
+			}
+			.ch5{
+				width: 80%;
+			}
+			.fb i{
+				font-size: 23px;
+			}
+			.logo{
+			font-size: 20px;
+		}
+		.navigation ul li a{
+			font-size: 13px;
+		}
+		.ch4 span a{
+			font-size: 14px;
+		}
+		.ch8 span a{
+			font-size: 14px;
+		}
+		.ch8 p{
+			font-size: 15px;
+		}
+		.ch1{
+			font-size: 23px;
+		}
+		.baner2{
+			height: 600px;
+		}
+		.baner3{
+			height: 300px;
+		}
+		.ch13,.ch15,.ch17,.ch19,.ch14,.ch16,.ch18,.ch20{
+			height: 230px;
+		}
+		.ch14 p,.ch16 p,.ch18 p,.ch20 p{
+			font-size: 12px;
+		}
+		.ch14 h5,.ch16 h5,.ch18 h5,.ch20 h5{
+			font-size: 20px;
+		}
+		.baner4{
+			height: 600px;
+		}
+		.ch21 p,.ch31 p{
+			font-size: 15px;
+		}
+		.ch21 h2,.ch31 h2{
+			font-size: 25px;
+		}
+		.ch21 h4,.ch31 h4{
+			font-size: 15px;
+		}
+
+		.baner5{
+			height: 600px;
+		}
+		.baner6{
+			height: 400px;
+		}
+		.ch47 p{
+			font-size: 12px;
+		}
+		.ch47{
+			margin-top: 75px;
+		}
+		} 
+
+	</style>
+	
+</head>
+<body>
+	<div class="header">
+		<div class="prnt">
+		<div class="logo">
+			<a href="#"><i class="fa fa-envelope" aria-hidden="true" style="padding-right: 5px;"></i><span>Companynamegmail.com</span></a>
+			<a href="#"><i class="fa fa-phone" aria-hidden="true" style="padding-right: 5px; padding-left: 7px;"></i><span>123 456 789</span></a>
+	</div>
+	<div class="fb">
+			<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+	</div>
+</div>
+	</div>
+	<div class="bar">
+		<div class="nav">
+			<div class="ch1">
+				<a href="#">COMPANY LOGO</a>
+			</div>
+			<div class="navigation"id="mySidenav">
+				<ul id="responsive">
+					<span style="color: white;">&#9776;</span>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">CAUSES</a></li>
+					<li><a href="#">GALLERY</a></li>
+					<li><a href="#">VOLUNTEER</a></li>
+					<li><a href="#">EVENTS</a></li>
+					<li><a href="#">CONTACT</a></li>
+					<li><a href="#" id="last">DOWNET NOW</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="baner">
+		<div class="box">
+			<div class="ch2">
+				<h1>SAVE OUR BELOVED <span>EARTH</span></h1>
+			</div>
+			<div class="ch3">
+				<h3>YOUR DONATION CAN SAVE MANY LIVES</h3>
+			</div>
+			<div class="ch4">
+				<span class="last"><a href="#">LEARN MORE</a></span>
+			</div>
+		</div>
+	</div>
+	<div class="baner2">
+		<div class="ch5">
+			<div class="ch6">
+				<h2>ABOUT US</h2>
+			</div>
+			<div class="ch7">
+				<div class="ch8">
+					<h3>We're for social causes</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<span class="last" style="margin-right: 5px; margin-left: 10px;"><a href="#">LEARN MORE</a></span>
+					<span class="last1"><a href="#">DONET NOW</a></span>
+				</div>
+				<div class="ch9"><img src="img\about-main1.jpg" width="100%" height="90%"></div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="baner3">
+		<div class="ch10">
+			<div class="ch11"><h2>FEATURED CAUSES</h2></div>
+			<div class="ch12">
+				<div class="ch13">
+					<div class="ch14">
+						<h5>BUILD HOME</h5>
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<p>Lorem ipsum dolor, sit amet<br>consecteture adipisicing.<br>similique illum excepturi<br>magnam earum</p>
+					</div>
+				</div>
+				<div class="ch15">
+					<div class="ch16">
+						<h5>MEDICAL FACILITIES</h5>
+						<i class="fa fa-hospital-o" aria-hidden="true"></i>
+						<p>Lorem ipsum dolor, sit amet<br>consecteture adipisicing.<br>similique illum excepturi<br>magnam earum</p>
+					</div>
+				</div>
+					<div class="ch17">
+					<div class="ch18">
+						<h5>FOODS & WATER</h5>
+						<i class="fa fa-cutlery" aria-hidden="true"></i>
+						<p>Lorem ipsum dolor, sit amet<br>consecteture adipisicing.<br>similique illum excepturi<br>magnam earum</p>
+					</div>
+				</div>
+				<div class="ch19">
+					<div class="ch20">
+						<h5>EDUCATION FACILITIES</h5>
+						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+						<p>Lorem ipsum dolor, sit amet<br>consecteture adipisicing.<br>similique illum excepturi<br>magnam earum</p>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+<div class="baner4">
+	<div class="ch23">
+	<div class="ch21">
+		<h2>Our gallery</h2>
+		<h4>Discover the best things We do</h4>
+		<p>We exist for non-profits,social enterprices,community groups,activities,lorem<br>policians and individual citizens that are making</p>
+	</div>
+	<div class="ch22">
+		<div class="ch24">
+			<img src="img\5-1.jpg">
+			<div class="box1"><p>HELPING HOMELESS</p></div>
+		</div>
+		<div class="ch28">
+			<img src="img\baby-1150109_1280.jpg">
+			<div class="box2"><p>HELPING HOMELESS</p></div>
+		</div>
+		<div class="ch29">
+			<img src="img\6-1.jpg">
+			<div class="box3"><p>HELPING HOMELESS</p></div>
+		</div>
+		<div class="ch25">
+			<img src="img\western-1322375_1280.jpg">
+			<div class="box4"><p>HELPING HOMELESS</p></div>
+		</div>
+		<div class="ch26">
+			<img src="img\aroni-738306_1280.jpg">
+			<div class="box5"><p>HELPING HOMELESS</p></div>
+		</div>
+		<div class="ch27">
+			<img src="img\children-1309318_1280.jpg">
+			<div class="box6"><p>HELPING HOMELESS</p></div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="baner5">
+	<div class="ch30">
+		<div class="ch31">
+		<h2>Volunteer</h2>
+		<h4>Discover the best things We do</h4>
+		<p>We exist for non-profits,social enterprices,community groups,activities,lorem<br>policians and individual citizens that are making</p>
+	</div>
+	<div class="ch32">
+		<div class="ch33">
+			<div class="ch34">
+				<img src="img\team1.jpg" width="100%" height="100%">
+			</div>
+			<div class="ch35">
+				<h5>Jenas hander</h5>
+				<p>CEO & founder</p>
+			</div>
+		</div>
+		<div class="ch36">
+			<div class="ch37">
+				<img src="img\team2.jpg" width="100%" height="100%">
+			</div>
+			<div class="ch38">
+				<h5>Jenas hander</h5>
+				<p>CEO & founder</p>
+			</div>
+		</div>
+		<div class="ch39">
+			<div class="ch40">
+				<img src="img\team3.jpg" width="100%" height="100%">
+			</div>
+			<div class="ch41">
+				<h5>Jenas hander</h5>
+				<p>CEO & founder</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<div class="baner6">
+	<div class="ch42">
+		<div class="ch43">
+		<h2>Testimonials</h2>
+		<h4>Review from our client</h4>
+	</div>
+	<div class="ch44">
+		<div class="ch46">
+			<div class="ch48"></div>
+			<div class="ch49">
+				<h5>Jac jacson</h5>
+				<p>CEO & Abanda</p>
+			</div>
+		</div>
+		<div class="ch47">
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<p style="font-family: poppins;">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, but also the leap into electronic typesetting when an unknown printer took a not galley of type and scrambled it to make a type specimen book.a type specimen book.</p>
+		</div>
+	</div>
+	<div class="ch45">
+		<img src="img\Rectangle 15 copy 2.jpg" style="padding: 5px;">
+		<img src="img\Rectangle 15.jpg" style="padding: 5px;">
+		<img src="img\Rectangle 15 copy 2.jpg" style="padding: 5px;">
+	</div>
+	</div>
+</div>
+
+<div class="baner7">
+	<div class="ch53">
+	<div class="ch50">
+		<h2 style="padding-bottom: 10px; font-family: lato; color: white; font-size: 30px;">COMPANY<br> LOGO HERE</h2>
+		<a href="#"><i class="fa fa-envelope" aria-hidden="true" style="padding-right: 8px;"></i><span>Companynamegmail.com</span>
+		</a><br>
+		<a href="#"><i class="fa fa-phone" aria-hidden="true" style="padding-right: 8px;"></i><span>123 456 789</span></a><br>
+		<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+	</div>
+	<div class="ch51">
+		<h2 style="color: white; font-family: lato; padding-bottom: 10px;">Quick Links</h2>
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">ABOUT US</a></li>
+			<li><a href="#">CAUSES</a></li>
+			<li><a href="#">GALLERY</a></li>
+			<li><a href="#">VOLUNTEER</a></li>
+			<li><a href="#">EVENTS</a></li>
+			<li><a href="#">CONTACT</a></li>
+			<li><a href="#">DOWNET NOW</a></li>
+		</ul>
+	</div>
+	<div class="ch52">
+		<input class="input1" type="text" name="full name" placeholder="Full Name">
+		<input class="input2" type="text" name="full name" placeholder="Email Address">
+		<input class="input3" type="text" name="full name" placeholder="Your Message">
+		<button>SEND</button>
+	</div>
+</div>
+</div>
+<div class="ch"><h4 style="color: white; font-family: lato; font-size: 12px;">Copyright @ 2021</h4></div>
+
+
+
+</html>
